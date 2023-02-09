@@ -1,11 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import Focus from "./src/features/Focus";
+import { colors } from "./src/utils/colors/colors";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> AAO thoda dyaan lagae</Text>
-      <StatusBar style="auto" />
+      <Focus />
     </View>
   );
 }
@@ -13,11 +13,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#1a0604",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  text: {
-    color: "white",
+    backgroundColor: colors.mahroon,
   },
 });
